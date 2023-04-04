@@ -21,6 +21,23 @@
     font-family:Impact, 'Arial Narrow Bold', sans-serif;
     font-size: x-large;
 }
+.registro{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    color: #9B59B6;
+}
+.crearUs{
+    padding: 2px;
+    border: solid 2px #9B59B6;
+    border-radius: 3%;
+    color: #9B59B6;
+}
+.iniciarUs{
+    padding: 2px;
+    border: solid 2px #9B59B6;
+    border-radius: 3%;
+}
 .section{
     background-color:#9B59B6;
     height: auto;
@@ -61,6 +78,7 @@
     color: white;
     background-color: black;
     border: solid white;
+    margin: 1rem;
 }
 .botones:hover{
     color: black;
@@ -88,11 +106,8 @@ footer{
     gap: 1rem;
     justify-content: center;
 }
-
-#verCarrito{
-    margin: 1rem;
-}
-
-#vaciarCarrito{
-    margin: 1rem;
+.finalizar{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 }

@@ -49,7 +49,7 @@ const mostrarProductos = () => {
                                 <p> Precio $${producto.precio}</p>
                             </div>
                             <img src = '${producto.img}' class = 'imgProductos'>
-                            <button id = 'boton${producto.id}'class ='btn botones'> Agregar al carrito</button>
+                            <button id = 'boton${producto.id}'class ='btn botones agregadoAlCarrito'> Agregar al carrito</button>
                         </div>`;
     contenedorProductos.appendChild(card);
 
@@ -148,3 +148,32 @@ const calcularTotal = () => {
   });
   totalCarro.innerHTML = `${totalCompra}`;
 };
+
+//Boton para comprar
+
+const botonCompra = document.getElementById("botonCompra");
+
+botonCompra.addEventListener("click", () => {
+  Swal.fire({
+    title: "¿Quieres finalizar la compra?",
+    confirmButtonText: "Aceptar",
+    showCancelButton: true,
+    cancelButtonText: "Cancelar",
+  }).then((result) => {
+    if (result.isConfirmed) {
+      Swal.fire({
+        text: "Compra finalizada",
+        icon: "success",
+      });
+    }
+  });
+});
+
+//Alerta añadido al carrito
+
+vaciarCarrito.addEventListener("click", () => {
+  Toastify({
+    text: "Carrito vaciado correctamente",
+    duration: 1000,
+  }).showToast();
+});
