@@ -1,0 +1,22 @@
+[
+  {
+    "nombre": "Matias",
+    "comentario": "Me encanto la calidad de la ropa, llego en el tiempo esperado",
+    "calificacion": "5 estrellas"
+  },
+  {
+    "nombre": "Sofia",
+    "comentario": "Buenos precios, pero la pagina me funcionaba muy mal",
+    "calificacion": "3 estrellas"
+  },
+  {
+    "nombre": "Daniela",
+    "comentario": "La ropa me encanto, el precio mas, pero el envio tardo mas de lo esperado",
+    "calificacion": "4 estrellas"
+  },
+  {
+    "nombre": "Rodo",
+    "comentario": "2 de las prendas que compre estaban rotas, no me gusto para nada",
+    "calificacion": "1 estrella"
+  }
+]

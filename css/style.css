@@ -111,3 +111,25 @@ footer{
     flex-direction: row;
     justify-content: center;
 }
+.tituloComentarios{
+    text-align: center;
+    color: white;
+    font-size: xx-large;
+}
+.contenedorComentarios{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap:1rem;
+    justify-content: center;
+}
+.coments{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 40%;
+    color: white;
+    margin: 0.5rem;
+    border: solid white 3px;
+    padding: 0.5rem;
+}

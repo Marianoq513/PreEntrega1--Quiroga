@@ -177,3 +177,20 @@ vaciarCarrito.addEventListener("click", () => {
     duration: 1000,
   }).showToast();
 });
+
+//FETCH
+
+const listadoComentarios = 'json/comentarios.json'
+const comentarios = document.getElementById('comentarios')
+
+fetch(listadoComentarios)
+    .then(respuesta => respuesta.json())
+    .then(datos => {
+        datos.forEach(coments => {
+            comentarios.innerHTML += `<div class="coments"><h4>Nombre: ${coments.nombre}</h4>
+            <p>comentario: ${coments.comentario}</p>
+            <p>Calificación: ${coments.calificacion} </p></div>`
+        })
+    })
+    .catch(error => console.log(error))
+    .finally(()=>console.log('Proceso finalizado'))
